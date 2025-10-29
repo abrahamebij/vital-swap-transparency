@@ -8,17 +8,17 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative px-4 overflow-hidden">
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent" /> */}
+    <section className="relative px-4  pt-20 overflow-hidden">
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/15 to-transparent" /> */}
 
-      <div className="container mx-auto max-w-5xl relative z-10">
-        <div className="text-center space-y-8 animate-in fade-in duration-700">
-          <img src="/hero.png" className="mx-auto w-1/2" />
+      <div className="text-center lg:text-start container mx-auto max-w-7xl relative flex flex-col-reverse gap-8 gap-y-20 lg:flex-row-reverse z-10">
+        <img src="/hero.png" className="mx-auto w-1/2 max-w-md min-w-sm" />
+        <div className="space-y-8 animate-in fade-in duration-700">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary tracking-tight">
             Simple, Transparent Pricing.
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             No hidden fees, no surprises. See exactly what you'll pay for every
             service, and use our live calculator to simulate your swap.
           </p>

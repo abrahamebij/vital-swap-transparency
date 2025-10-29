@@ -9,14 +9,14 @@ export const CTASection = () => {
       <img
         src="/decoration.png"
         alt="Decoration"
-        className="absolute w-80 -right-20 -top-8"
+        className="absolute w-40 md:w-52 lg:w-80 -right-20 -top-8"
       />
       <img
         src="/decoration.png"
         alt="Decoration"
-        className="absolute w-80 -left-20 -bottom-8"
+        className="absolute w-40 md:w-52 lg:w-80 -left-20 -bottom-8"
       />
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-4xl z-10">
         <div className="text-center space-y-8 animate-in fade-in duration-700">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold text-white">
@@ -50,7 +50,7 @@ export const CTASection = () => {
             asChild
           >
             <a
-              href={`https://vitalswap.com/signup?ref=${TEAM_REFERRAL_CODE}`}
+              href={`https://app.vitalswap.com?ref=${TEAM_REFERRAL_CODE}`}
               target="_blank"
               rel="noopener noreferrer"
             >
