@@ -12,7 +12,7 @@ export const HeroSection = () => {
       {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/15 to-transparent" /> */}
 
       <div className="text-center lg:text-start container mx-auto max-w-7xl relative flex flex-col-reverse gap-8 gap-y-20 lg:flex-row-reverse z-10">
-        <img src="/hero.png" className="mx-auto w-1/2 max-w-md min-w-sm" />
+        <img src="/hero.png" className="mx-auto w-1/2 max-w-lg min-w-md" />
         <div className="space-y-8 animate-in fade-in duration-700">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary tracking-tight">
             Simple, Transparent Pricing.
