@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, TrendingUp } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const TEAM_REFERRAL_CODE = "TEAM_SILVER_SWAPTAG";
+const TEAM_REFERRAL_CODE = "@abrahamebij";
 
 export const CalculatorSection = () => {
   const [usdAmount, setUsdAmount] = useState<string>("100");
@@ -60,7 +60,7 @@ export const CalculatorSection = () => {
           </p>
         </div>
 
-        <Card className="shadow-primary border-0 bg-gradient-to-br from-card via-card to-primary/5">
+        <Card className="">
           <CardHeader>
             <CardTitle className="flex items-center justify-between flex-wrap gap-2">
               <span className="text-xl">Calculate Your Swap</span>
@@ -85,7 +85,7 @@ export const CalculatorSection = () => {
                     type="text"
                     value={usdAmount}
                     onChange={(e) => handleAmountChange(e.target.value)}
-                    className="pl-8 text-lg h-14 text-right font-semibold"
+                    className="pl-8 text-lg h-14 font-semibold"
                     placeholder="0.00"
                   />
                   <span className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground">
@@ -107,7 +107,7 @@ export const CalculatorSection = () => {
                     type="text"
                     value={calculateNGN(usdAmount)}
                     disabled
-                    className="pl-8 text-lg h-14 text-right font-semibold bg-secondary/50"
+                    className="pl-8 text-lg h-14 font-semibold/50"
                   />
                   <span className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground">
                     NGN
@@ -116,15 +116,19 @@ export const CalculatorSection = () => {
               </div>
             </div>
 
-            <div className="bg-secondary/50 rounded-lg p-6 space-y-3">
+            <div className="rounded-lg p-6 space-y-3">
               <h3 className="font-semibold text-base mb-3">Fee Breakdown</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Amount to Convert:</span>
+                  <span className="text-muted-foreground">
+                    Amount to Convert:
+                  </span>
                   <span className="font-semibold">${usdAmount || "0.00"}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">FX Transaction Fee:</span>
+                  <span className="text-muted-foreground">
+                    FX Transaction Fee:
+                  </span>
                   <span className="font-semibold text-accent">FREE</span>
                 </div>
                 <div className="h-px bg-border my-2" />
@@ -138,7 +142,7 @@ export const CalculatorSection = () => {
             </div>
 
             <Button
-              variant="accent"
+              variant="default"
               size="lg"
               className="w-full text-base py-6"
               asChild

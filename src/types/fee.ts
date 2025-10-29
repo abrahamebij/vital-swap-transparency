@@ -1,7 +1,7 @@
 export interface FeeItem {
-  service: string;
-  fee: string;
-  description: string;
+  Service: string;
+  Fee: string;
+  Description: string;
 }
 
 export interface FeeCategory {

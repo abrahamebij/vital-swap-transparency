@@ -37,7 +37,7 @@ export const FeeStructureSection = () => {
   const renderFeeTable = (category: FeeCategory) => {
     return Object.entries(category).map(([categoryName, items]) => (
       <AccordionItem key={categoryName} value={categoryName}>
-        <AccordionTrigger className="text-base font-semibold hover:text-primary">
+        <AccordionTrigger className="text-base font-semibold">
           {categoryName}
         </AccordionTrigger>
         <AccordionContent>
@@ -45,17 +45,30 @@ export const FeeStructureSection = () => {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-border">
-                  <th className="text-left py-3 px-4 font-semibold text-sm">Service</th>
-                  <th className="text-left py-3 px-4 font-semibold text-sm">Fee</th>
-                  <th className="text-left py-3 px-4 font-semibold text-sm">Description</th>
+                  <th className="text-left py-3 px-4 font-semibold text-sm">
+                    Service
+                  </th>
+                  <th className="text-left py-3 px-4 font-semibold text-sm">
+                    Fee
+                  </th>
+                  <th className="text-left py-3 px-4 font-semibold text-sm">
+                    Description
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {items.map((item, index) => (
-                  <tr key={index} className="border-b border-border/50 hover:bg-secondary/50 transition-colors">
-                    <td className="py-3 px-4 text-sm">{item.service}</td>
-                    <td className="py-3 px-4 text-sm font-medium text-accent">{item.fee}</td>
-                    <td className="py-3 px-4 text-sm text-muted-foreground">{item.description}</td>
+                  <tr
+                    key={index}
+                    className="border-b border-border/50 hover:bg-secondary/10 transition-colors"
+                  >
+                    <td className="py-3 px-4 text-sm">{item.Service}</td>
+                    <td className="py-3 px-4 text-sm font-medium">
+                      {item.Fee}
+                    </td>
+                    <td className="py-3 px-4 text-sm text-muted-foreground">
+                      {item.Description}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -68,7 +81,7 @@ export const FeeStructureSection = () => {
 
   if (loading) {
     return (
-      <section className="py-16 md:py-24 px-4 bg-secondary/30">
+      <section className="py-16 md:py-24 px-4/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <Skeleton className="h-12 w-48 mx-auto mb-4" />
@@ -85,7 +98,7 @@ export const FeeStructureSection = () => {
   }
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-secondary/30">
+    <section className="py-16 md:py-24 px-4/30 mt-20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-in fade-in duration-700">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Our Fees</h2>

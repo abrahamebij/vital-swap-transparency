@@ -23,13 +23,14 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#032F66",
           foreground: "hsl(var(--primary-foreground))",
-          hover: "hsl(var(--primary-hover))",
+          hover: "#04458D",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#FDB813",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "#E0A10B"
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -90,5 +91,4 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
