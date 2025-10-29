@@ -4,7 +4,7 @@ const Footer = () => {
       <a href="https://app.vitalswap.com" className="mx-auto" target="_blank">
         <img src="/vitalswap_logo_alt.png" className="w-28" />
       </a>
-      <p className=”text-center”>
+      <p className="text-center">
         Copyright © {new Date().getFullYear()} VitalSwap. All rights reserved.
       </p>
     </footer>
