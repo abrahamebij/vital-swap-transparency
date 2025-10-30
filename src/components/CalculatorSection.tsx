@@ -59,7 +59,7 @@ export const CalculatorSection = () => {
             See exactly how much your recipient will receive
           </p>
         </div>
-        <div className="grid lg:flex gap-4">
+        <div className="grid lg:flex gap-4 mx-auto justify-center">
           <img
             src="/calculator.png"
             className="rounded-xl max-w-lg mx-auto"
