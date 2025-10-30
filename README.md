@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# VitalSwap Fee Page - Team Silver
 
-## Project info
+This project is a fully functional and responsive front-end application built for the **VitalSwap Hackathon 2025**. The goal was to design and develop a user-friendly "Fee Page" that clearly displays VitalSwap's fees, builds user trust through transparency, and converts visitors into customers.
 
-**URL**: https://lovable.dev/projects/b6560710-6111-43e4-a742-0239445bb2ff
+This application was developed by **Team Silver**.
 
-## How can I edit this code?
+-----
 
-There are several ways of editing your application.
+## Links
 
-**Use Lovable**
+  * **Live Demo:** [https://vitalswap.vercel.app/](https://vitalswap.vercel.app/)
+  * **Figma Design:** [View the design file](https://www.figma.com/design/woZ1CWz0wo2zm3lhW1gEgi/VitalSwap-Hackathon-2025?node-id=0-1&t=4WArid5ihOk7s1L5-1)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b6560710-6111-43e4-a742-0239445bb2ff) and start prompting.
+-----
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+  * **Transparent Fee Display:** Clearly separates and displays all service fees for both **Personal** and **Business** accounts using data from the official VitalSwap API.
+  * **Interactive Accordion Menu:** Fee categories are organized in a clean accordion, allowing users to easily find the information they need without being overwhelmed.
+  * **Live FX Swap Calculator:** An interactive calculator that provides real-time USD to NGN conversion rates, empowering users to simulate transactions.
+  * **Fully Responsive Design:** A mobile-first approach ensures a seamless experience across all devices, from mobile phones to desktops.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+-----
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tech Stack
 
-Follow these steps:
+  * **Framework:** React (Vite)
+  * **Styling:** Tailwind CSS
+  * **Components:** Shadcn/UI
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+-----
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## AI-Assisted Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+In the spirit of the hackathon's encouragement to leverage modern tools, this project was developed with assistance from the AI tool **[Lovable](https://lovable.dev)**. Its contributions included:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+  * Generating boilerplate code for React components.
+  * Brainstorming UI/UX concepts and refining copy.
+  * Creating design assets and illustrations.
+  * Assisting with debugging and code optimization.
 
-**Edit a file directly in GitHub**
+As you would see in the link below: 
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+https://lovable.dev/projects/b6560710-6111-43e4-a742-0239445bb2ff
 
-**Use GitHub Codespaces**
+-----
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## How to Run Locally
 
-## What technologies are used for this project?
+1.  **Clone the repository:**
 
-This project is built with:
+    ```bash
+    git clone https://github.com/abrahamebij/vital-swap-transparency.git
+    ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2.  **Navigate to the project directory:**
 
-## How can I deploy this project?
+    ```bash
+    cd vital-swap-transparency
+    ```
 
-Simply open [Lovable](https://lovable.dev/projects/b6560710-6111-43e4-a742-0239445bb2ff) and click on Share -> Publish.
+3.  **Install dependencies:**
 
-## Can I connect a custom domain to my Lovable project?
+    ```bash
+    npm install
+    ```
 
-Yes, you can!
+4.  **Run the development server:**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+    ```bash
+    npm run dev
+    ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The application will be running on `http://localhost:8080`.
