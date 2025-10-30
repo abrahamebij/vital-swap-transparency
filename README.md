@@ -1,4 +1,4 @@
-# VitalSwap Fee Page - Team Silver
+# [VitalSwap](https://app.vitalswap.com) Fee Page - Team Silver
 
 This project is a fully functional and responsive front-end application built for the **VitalSwap Hackathon 2025**. The goal was to design and develop a user-friendly "Fee Page" that clearly displays VitalSwap's fees, builds user trust through transparency, and converts visitors into customers.
 
