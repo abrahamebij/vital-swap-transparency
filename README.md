@@ -9,7 +9,7 @@ This application was developed by **Team Silver**.
 ## Links
 
   * **Live Demo:** [https://vitalswap.vercel.app/](https://vitalswap.vercel.app/)
-  * **Figma Design:** [View the design file](https://www.figma.com/design/woZ1CWz0wo2zm3lhW1gEgi/VitalSwap-Hackathon-2025?node-id=0-1&t=4WArid5ihOk7s1L5-1)
+  * **Figma Design:** [View the design file](https://www.figma.com/design/woZ1CWz0wo2zm3lhW1gEgi/VitalSwap-Hackathon-2025?node-id=0-1&t=4WArid5ihOk7s1L5-1). *Unable to submit on day 1*
 
 ![VitalSwap-Fees---Simple-Transparent-Pricing](https://github.com/user-attachments/assets/2fd9094c-12ed-44cf-bf66-f350594e5a26)
 
