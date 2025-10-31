@@ -117,7 +117,7 @@ export const CalculatorSection = () => {
 
                 {/* Swap Currencies */}
                 <button
-                  className="p-2 size-12 bg-primary rounded-full flex justify-center items-center text-white text-center focus:scale-95 duration-300"
+                  className="p-2 shrink-0 size-12 bg-primary rounded-full flex justify-center items-center text-white text-center focus:scale-95 duration-300"
                   onClick={handleSwap}
                   aria-label="Swap Currencies"
                 >
