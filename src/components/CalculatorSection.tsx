@@ -60,7 +60,7 @@ export const CalculatorSection = () => {
 
   return (
     <section id="calculator" className="py-16 md:py-24 px-4">
-      <div className="container mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl">
         <div className="text-center mb-12 animate-in fade-in duration-700">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Real-Time FX Swap Calculator
@@ -72,7 +72,7 @@ export const CalculatorSection = () => {
         <div className="grid lg:flex gap-4 mx-auto justify-center">
           <img
             src="/calculator.png"
-            className="rounded-xl max-w-lg mx-auto"
+            className="rounded-xl max-w-lg mx-auto w-full"
             alt=""
           />
           <Card className="">
@@ -89,7 +89,7 @@ export const CalculatorSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="flex items-center gap-6">
+              <div className="flex items-center flex-wrap justify-center gap-6">
                 <div className="space-y-2">
                   <Label
                     htmlFor="usd-amount"

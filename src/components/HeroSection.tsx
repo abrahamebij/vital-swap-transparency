@@ -9,11 +9,11 @@ export const HeroSection = () => {
 
   return (
     <section className="relative px-4 pt-20 overflow-hidden">
-      <div className="text-center lg:text-start container mx-auto max-w-7xl relative flex flex-col-reverse gap-8 gap-y-20 lg:flex-row-reverse z-10">
+      <div className="text-center lg:text-start mx-auto max-w-7xl relative flex flex-col-reverse gap-8 gap-y-20 lg:flex-row-reverse z-10">
         <img
           src="/hero.png"
           // <-- ADDED: Entrance animation for the image -->
-          className="mx-auto w-1/2 max-w-lg min-w-md animate-in fade-in slide-in-from-bottom-12 lg:slide-in-from-right-12 duration-700 delay-200"
+          className="mx-auto w-full lg:w-1/2 max-w-lg min-w-md animate-in fade-in slide-in-from-bottom-12 lg:slide-in-from-right-12 duration-700 delay-200"
         />
         {/* <-- REMOVED: Animation wrapper from this div --> */}
         <div className="space-y-8">

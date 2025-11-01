@@ -108,13 +108,13 @@ export const FeeStructureSection = () => {
 
   return (
     <section className="py-16 md:py-24 px-4 mt-20">
-      <div className="container mx-auto max-w-6xl">
-        <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.7 }}
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Our Fees</h2>
           <p className="text-muted-foreground text-lg">
@@ -129,44 +129,56 @@ export const FeeStructureSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }} // amount triggers animation when 20% is visible
         >
-            <Card className="shadow-card border-0">
-              <CardContent className="p-6 md:p-8">
-                <Tabs defaultValue="personal" className="w-full">
-                  <TabsList className="grid w-full grid-cols-2 mb-8 h-12">
-                    <TabsTrigger value="personal" className="text-base">Personal</TabsTrigger>
-                    <TabsTrigger value="business" className="text-base">Business</TabsTrigger>
-                  </TabsList>
+          <Card className="shadow-card border-0">
+            <CardContent className="p-6 md:p-8">
+              <Tabs defaultValue="personal" className="w-full">
+                <TabsList className="grid w-full grid-cols-2 mb-8 h-12">
+                  <TabsTrigger value="personal" className="text-base">
+                    Personal
+                  </TabsTrigger>
+                  <TabsTrigger value="business" className="text-base">
+                    Business
+                  </TabsTrigger>
+                </TabsList>
 
-                  <TabsContent value="personal" className="mt-0">
-                    {feeData?.Customer && (
-                      <motion.div
-                        variants={accordionContainerVariants}
-                        initial="hidden"
-                        animate="visible" // Use animate here so it triggers when the tab is shown
+                <TabsContent value="personal" className="mt-0">
+                  {feeData?.Customer && (
+                    <motion.div
+                      variants={accordionContainerVariants}
+                      initial="hidden"
+                      animate="visible" // Use animate here so it triggers when the tab is shown
+                    >
+                      <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full space-y-2"
                       >
-                        <Accordion type="single" collapsible className="w-full space-y-2">
-                          {renderFeeTable(feeData.Customer)}
-                        </Accordion>
-                      </motion.div>
-                    )}
-                  </TabsContent>
+                        {renderFeeTable(feeData.Customer)}
+                      </Accordion>
+                    </motion.div>
+                  )}
+                </TabsContent>
 
-                  <TabsContent value="business" className="mt-0">
-                    {feeData?.Business && (
-                      <motion.div
-                        variants={accordionContainerVariants}
-                        initial="hidden"
-                        animate="visible"
+                <TabsContent value="business" className="mt-0">
+                  {feeData?.Business && (
+                    <motion.div
+                      variants={accordionContainerVariants}
+                      initial="hidden"
+                      animate="visible"
+                    >
+                      <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full space-y-2"
                       >
-                        <Accordion type="single" collapsible className="w-full space-y-2">
-                          {renderFeeTable(feeData.Business)}
-                        </Accordion>
-                      </motion.div>
-                    )}
-                  </TabsContent>
-                </Tabs>
-              </CardContent>
-            </Card>
+                        {renderFeeTable(feeData.Business)}
+                      </Accordion>
+                    </motion.div>
+                  )}
+                </TabsContent>
+              </Tabs>
+            </CardContent>
+          </Card>
         </motion.div>
       </div>
     </section>

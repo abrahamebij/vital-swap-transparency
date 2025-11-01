@@ -40,7 +40,7 @@ export const CTASection = () => {
 
       {/* 4. Animate the main container into view */}
       <motion.div
-        className="container mx-auto max-w-4xl z-10"
+        className="mx-auto max-w-4xl z-10"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
